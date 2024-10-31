@@ -6,7 +6,7 @@ import Header from './screens/Header.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-<Header createdBy="AKSHAY KAKADE & MAVERICK JONES" />
+<Header/>
     <App />
   </StrictMode>,
 )

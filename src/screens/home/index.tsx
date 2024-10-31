@@ -5,7 +5,7 @@
     import '@/App.css';
     import { Button } from "@/components/ui/button";
     import Draggable from "react-draggable";
-import { Bold } from "lucide-react";
+
 
 
 interface GeneratedResult {
@@ -99,7 +99,7 @@ export default function Home() {
         }
     };
 
-
+console.log(latexPosition);
     const resetCanvas = () => {
         const canvas = canvasRef.current;
         if (canvas) {
