@@ -29,10 +29,9 @@
         const [latexPosition, setLatexPosition] = useState({ x: 10, y: 200 });
         const [latexExpression, setLatexExpression] = useState<Array<string>>([]);
         const [loading, setLoading] = useState(false);
+        const [showText, setShowText] = useState(true);
 
-        
-
-            const [showText, setShowText] = useState(true);
+        console.log(latexPosition);
         
             useEffect(() => {
                 const timeout = setTimeout(() => {
