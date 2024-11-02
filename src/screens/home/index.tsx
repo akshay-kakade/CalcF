@@ -208,7 +208,7 @@
                     </span>
                 </p>
     
-                <div className="">
+                <div className="cursor-pointer">
                     {latexExpression && (
                         <Draggable>
                             <div className="text-center align-text-top content-center items-center mr-100 mb-500 absolute p-2 text-white rounded shadow-md bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 hover:shadow-lg transition-shadow duration-300">
