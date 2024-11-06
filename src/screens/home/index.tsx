@@ -30,6 +30,8 @@
         const [latexExpression, setLatexExpression] = useState<Array<string>>([]);
         const [loading, setLoading] = useState(false);
         const [showText, setShowText] = useState(true);
+        console.log(loading)
+        console.log(showText)
 
         console.log(latexPosition);
         
@@ -199,8 +201,8 @@
         };
     
         return (
-            <div className="flex flex-col items-center justify-center h-screen bg-gray-100">
-                <p className="text-purple-700 w-full bg-inherit bg-gradient-to-r from-amber-400 via-pink-500 to-blue-500 hover:shadow-lg transition-shadow duration-300">
+            <div className="flex flex-col items-center justify-center bg-gray-100">
+                <p className="text-purple-700 w-full bg-inherit rounded bg-gradient-to-r from-amber-400 via-pink-500 to-blue-500 hover:shadow-lg transition-shadow duration-300">
                     <i className="text-white">How to Use the AI-Powered Calculator</i>
                     <br />
                     <span className="text-gray-700">
@@ -225,14 +227,15 @@
                 </div>
     
                 <canvas
-                    ref={canvasRef}
-                    id="canvas"
-                    className="border-1 border border-red-600 w-full h-full"
-                    onMouseDown={startDrawing}
-                    onMouseOut={stopDrawing}
-                    onMouseUp={stopDrawing}
-                    onMouseMove={draw}
-                />
+                ref={canvasRef}
+                id='canvas'
+                className='border-1 border h-fit w-fit'
+                onMouseDown={startDrawing}
+                onMouseMove={draw}
+                onMouseUp={stopDrawing}
+                onMouseOut={stopDrawing}
+            />
+
     
                 <div className="fixed ml-6 mr-6 bottom-0 left-0 right-0 flex flex-row flex-wrap items-center justify-center gap-2 mb-0 p-4 rounded-t-lg shadow-lg z-20 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 hover:shadow-lg transition-shadow duration-300">
                     <Group className="flex gap-2 flex-col">
